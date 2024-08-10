@@ -6,14 +6,18 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from matplotlib import font_manager, rc
 
-# 차트에 한글 나오게 설정
-plt.rcParams['axes.unicode_minus'] = False
-if platform.system() == 'Linux':
-    plt.rc('font', family='NanumGothic')
-elif platform.system() == 'Windows':
-    font_path = "C:/Windows/Fonts/malgun.ttf"  # Windows에서 한글 폰트 경로
-    font_manager.fontManager.addfont(font_path)
-    rc('font', family='Malgun Gothic')
+# Google Fonts를 불러오는 HTML 코드
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+    body {
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 def translate_ids_to_names(main_df, target_column, target_df):
     for index, value in main_df[target_column].items():
