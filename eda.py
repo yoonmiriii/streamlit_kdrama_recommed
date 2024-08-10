@@ -18,6 +18,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Google Fonts를 사용하여 matplotlib 폰트 설정
+plt.rcParams['font.family'] = 'Nanum Gothic'
+plt.rcParams['axes.unicode_minus'] = False
+
 def translate_ids_to_names(main_df, target_column, target_df):
     for index, value in main_df[target_column].items():
         new_values = []
