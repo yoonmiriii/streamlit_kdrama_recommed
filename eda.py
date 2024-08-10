@@ -6,17 +6,17 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from matplotlib import font_manager, rc
 
-# 폰트 설정을 Streamlit의 CSS로 적용
-st.markdown(
-    """
-    <style>
-    body {
-        font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# # 폰트 설정을 Streamlit의 CSS로 적용
+# st.markdown(
+#     """
+#     <style>
+#     body {
+#         font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 # 차트에 한글 나오게 설정
 plt.rcParams['axes.unicode_minus'] = False
