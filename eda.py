@@ -4,15 +4,15 @@ import pandas as pd
 import seaborn as sb
 import matplotlib.pyplot as plt
 from collections import Counter
-# from matplotlib import font_manager, rc
+from matplotlib import font_manager, rc
 
-# 폰트 경로 설정
-font_path = './assets/fonts/NanumGothic-Regular.ttf'
-
-# 폰트 설정
-font_prop = font_manager.FontProperties(fname=font_path)
-plt.rcParams['font.family'] = font_prop.get_name()
+# 차트에 한글 나오게 설정
 plt.rcParams['axes.unicode_minus'] = False
+
+# 폰트 파일 경로 설정
+font_path = './assets/fonts/NanumGothic-Regular.ttf'
+font_prop = font_manager.FontProperties(fname=font_path)
+plt.rc('font', family=font_prop.get_name())
 
 
 def translate_ids_to_names(main_df, target_column, target_df):
