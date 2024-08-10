@@ -1,10 +1,9 @@
-import platform
 import streamlit as st
 import pandas as pd
 import seaborn as sb
 import matplotlib.pyplot as plt
 from collections import Counter
-from matplotlib import font_manager, rc
+# from matplotlib import font_manager, rc
 
 # Google Fonts를 불러오는 HTML 코드
 st.markdown(
