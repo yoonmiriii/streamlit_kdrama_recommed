@@ -3,7 +3,7 @@ import streamlit as st
 
 def run_home():
         opening_words = """
-        \n
+        \n요즘 한국드라마의 인기는
 
         
         """

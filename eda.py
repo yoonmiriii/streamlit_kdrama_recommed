@@ -106,19 +106,21 @@ def run_eda():
         plt.xticks(rotation=45)
         st.pyplot(fig4)
 
+    
     if st.button('배우별 드라마 출연 횟수 그래프 보기', help='클릭해주세요.', use_container_width=True):
         cast_counts = df_series['cast_ids'].str.split(',').explode().str.strip().value_counts()
 
         # 상위 30명 캐스트만 추출
         top_cast = cast_counts.head(30)
 
-        fig5 = plt.figure(figsize=(12, 20))
-        top_cast.plot(kind='barh')
-        plt.title('배우별 드라마 출연횟수(Top30)')
-        plt.xlabel('드라마 수')
-        plt.ylabel('배우')
-        plt.gca().invert_yaxis()  # 순서 뒤집기 (가장 많은 것이 위에 오도록)
+        fig5, ax = plt.subplots(figsize=(12, 20))
+        top_cast.plot(kind='barh', ax=ax)
+        ax.set_title('Number of appearances in dramas by actor (Top 30)')
+        ax.set_xlabel('Number of dramas')
+        ax.set_ylabel('Actor/Actress')
+        ax.invert_yaxis()  # 순서 뒤집기 (가장 많은 것이 위에 오도록)
         st.pyplot(fig5)
+
 
     if st.button('장르별 드라마 수 비율 그래프 보기', help='클릭해주세요.', use_container_width=True):
         # 각 장르 단어의 등장 횟수 세기
