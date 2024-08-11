@@ -44,9 +44,9 @@ def run_eda():
         
         fig1 = plt.figure()   # figure 객체 생성해줘야 오류 메세지 안 생김
         plt.bar(air_series.index, air_series.values, color='green')
-        plt.xlabel('연도')
-        plt.ylabel('드라마 수')
-        plt.title('연도별 방영된 드라마 수')
+        plt.xlabel('Year')
+        plt.ylabel('Number of dramas')
+        plt.title('Number of dramas aired by year')
         plt.xticks(rotation=45)
         plt.grid(axis='y')  # y축에 그리드 추가
         st.pyplot(fig1)
@@ -62,9 +62,9 @@ def run_eda():
         
         fig2 = plt.figure(figsize=(12, 8))
         plt.barh(list(counts_sorted.keys()), list(counts_sorted.values()), color='skyblue')
-        plt.xlabel('드라마 수')
-        plt.ylabel('방송사')
-        plt.title('방송사별 방영된 드라마 수')
+        plt.xlabel('Number of dramas')
+        plt.ylabel('Broadcasting companies')
+        plt.title('Number of dramas aired by broadcaster')
         plt.grid(axis='x')  # x축에 그리드 추가
         st.pyplot(fig2)
 
@@ -87,9 +87,9 @@ def run_eda():
         # 시각화
         if not filtered_df.empty:
             sb.scatterplot(x='number_of_episodes', y='episode_run_time', data=filtered_df)
-            plt.title('에피소드 수와 드라마 방영시간')
-            plt.xlabel('에피소드 수')
-            plt.ylabel('방영시간 (분)')
+            plt.title('The number of episodes and the duration of the drama')
+            plt.xlabel('Number of episodes')
+            plt.ylabel('Broadcast time (minutes)')
             plt.grid(True)
             st.pyplot(fig3)
         else:
@@ -100,9 +100,9 @@ def run_eda():
 
         fig4 = plt.figure(figsize=(12, 8))
         director_counts.plot(kind='bar')
-        plt.title('감독별 제작한 드라마 수(Top10)')
-        plt.xlabel('감독')
-        plt.ylabel('드라마 수')
+        plt.title('Number of dramas produced by director (Top10)')
+        plt.xlabel('Directors')
+        plt.ylabel('Number of dramas')
         plt.xticks(rotation=45)
         st.pyplot(fig4)
 
@@ -146,7 +146,7 @@ def run_eda():
         fig8 = plt.figure(figsize=(10, 8))
         plt.pie(top_sizes, labels=top_labels, autopct='%1.1f%%', startangle=30, wedgeprops={'width':0.7})
         plt.axis('equal')  # 원 모양으로 조정
-        plt.title('장르별 드라마 수 비율')
+        plt.title('Percentage of dramas by genre')
         st.pyplot(fig8)
 
     st.subheader('장르에 해당하는 드라마를 보여드립니다')
