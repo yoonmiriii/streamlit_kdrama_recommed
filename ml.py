@@ -1,6 +1,7 @@
 import joblib
 import pandas as pd
 import streamlit as st
+import sklearn
 
 def run_ml():
     try:
@@ -42,5 +43,12 @@ def run_ml():
                     st.image(img_url, width=200)  # 이미지 크기를 적절히 조절하세요.
     except FileNotFoundError as e:
         st.error(f"파일을 찾을 수 없습니다: {e}")
+    except ImportError as e:
+        st.error(f"필요한 라이브러리를 찾을 수 없습니다: {e}. `scikit-learn`을 설치해 보세요.")
     except Exception as e:
         st.error(f"문제가 발생했습니다: {e}")
+
+
+
+
+# print(sklearn.__version__)
