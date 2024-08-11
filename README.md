@@ -1,9 +1,12 @@
-![헤더 이미지](https://camo.githubusercontent.com/248672dc97640ad9688248cc8097a9fb52ab0c2b37d56c93876d96321b79f001/68747470733a2f2f63617073756c652d72656e6465722e76657263656c2e6170702f6170693f747970653d7265637426636f6c6f723d6772616469656e7426746578743d2532302532305245435425323025323026666f6e74416c69676e3d333026666f6e7453697a653d3330267465787442673d7472756526646573633d557365253230253237746578744267253237253230746f253230686967686c69676874253230253237746578742532372664657363416c69676e3d36302664657363416c69676e593d3530)
+![header](https://capsule-render.vercel.app/api?text=Getting%20drama%20recommend!&fontSize=40&width=100)
+<br>
+<br>
+<br>
 
 # 파일이름 : streamlit_kdrama_recommend
 > ## 내가 좋아하는 드라마와 비슷한 드라마 추천받기
 
- > ### :warning: 내가 재미있게 본 드라마와 비슷한 스타일의 또 다른 드라마들을 10개 추천받을 수 있다.
+ > ### &#129321; 내가 재미있게 본 드라마와 비슷한 스타일의 또 다른 드라마들을 10개 추천받을 수 있다.
 
  > #### 한국 드라마는 국내외를 막론하고 큰 인기를 얻고 있습니다. 특히 넷플릭스와 같은 스트리밍 플랫폼을 통해 언제든지 원하는 시간에 드라마를 자유롭게 시청할 수 있게 되면서 한국 드라마의 인기는 더욱 치솟았습니다. 하지만 한 드라마의 마지막 회를 보고 난 후, 다음에 무엇을 볼지 결정하는 것은 언제나 고민입니다. 그 고민을 덜어드리겠습니다.
 
@@ -12,11 +15,11 @@
 
 |인터프리터 언어|데이터분석|웹 대시보드 Tool|플랫폼|배포|
 |:------:|:------:|:---------:|:-----:|:--------:|
-|<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>|<img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white /">|<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/>|<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>|<img src="https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=Amazon%20EC2&logoColor=white">|
+|<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>|<img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white /">|<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/>|<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>|<img src="https://img.shields.io/badge/Streamlit%20Sharing-FF9900?style=for-the-badge">|
 
 ---
 **작업순서**<br>
-    데이터 주제 선정 ➡︎ 라이브러리 및 데이터 불러오기 ➡︎ 데이터 확인하기 ➡︎ 전처리, 변수 변환하기 ➡︎ Matplotlib로 차트 그리기 ➡︎모델링 및 예측하기 ➡︎ 예측 모델 평가하기 ➡︎ Python 프레임워크 Streamlit으로 웹 대시보드 개발 ➡︎ AWS EC2 배포
+    데이터 주제 선정 ➡︎ 라이브러리 및 데이터 불러오기 ➡︎ 데이터 확인하기 ➡︎ 전처리, 변수 변환하기 ➡︎ Matplotlib로 차트 그리기 ➡︎모델링 및 예측하기 ➡︎ 예측 모델 평가하기 ➡︎ Python 프레임워크 Streamlit으로 웹 대시보드 개발 ➡︎ Streamlit Sharing 배포
 
 ---
 <br>
@@ -24,7 +27,7 @@
 
 :pencil: 데이터 주제 선정 
 -
-폐암은 국내 암 사망율 1위이지만, 초기 증상이 없어 발견하기 어렵다고 한다. 그래서 증상이 나타나면 이미 손쓸 수가 없는 상태인 경우가 많아 사망율이 높지만, 초기에 발견해서 수술을 하면 완치율이 90% 정도로 양호한 질병이기도 하다.<br> 이런 폐암을 초기에 발견하면 좋을 것 같다는 생각에 프로젝트를 진행해 보았다.
+재미있게 본 드라마를 마지막 회까지 본 후, 비슷한 느낌을 이어갈 드라마를 찾는 것은 항상 어려운 일입니다. 많은 드라마 목록 중에서 어떤 드라마를 선택해야 할지 결정하는 것은 큰 고민이었습니다. 비슷한 스타일의 드라마를 선택하더라도, 첫 회를 보면서 내가 찾던 스타일이 아닌 것 같아 종료하고 다른 드라마를 찾아보는 과정을 반복하게 되었습니다. 이러한 고민을 겪는 분들을 위해 이 프로젝트를 진행하게 되었습니다.
   
 <br>
 
