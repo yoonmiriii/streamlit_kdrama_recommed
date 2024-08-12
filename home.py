@@ -12,6 +12,7 @@ def run_home():
         \n여러분이 좋아할 만한 드라마를 선택하면, 그 드라마와 비슷한 스타일의 다른 드라마를 추천해드립니다.
    
         """
+        st.subheader('', divider='gray')
         st.write('Streamlit으로 웹 대시보드를 만들었고, Matplotllib의 차트로 드라마의 분포 순위를 나타냈으며, "CountVectorizer"로 텍스트 데이터를 수치형 데이터로 변환 / "cosine_similarity"로 드라마 간의 유사도를 계산하여 추천하도록 만들었습니다.')
         
         st.image('https://cdn.pixabay.com/animation/2023/05/05/07/37/07-37-14-710_512.gif', width=500)
